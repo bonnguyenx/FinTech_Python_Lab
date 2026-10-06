@@ -1,0 +1,18 @@
+#1. Du lieu dau vao 
+full_name = input(" Ho Ten Day Du: ")
+year = input (" Nam Sinh: " )
+
+#2. Lay 1 tu cuoi trong ten 
+first_name = full_name. split()
+
+#3. Lay tu cuoi cung lam Ten
+name = first_name [-1] if first_name else " " 
+
+#4. lay toi da 3 ky tu dau cua ten va chuyen thanh in HOA
+first_name = name[0:4].upper() 
+
+#5. Tao ma uu dai theo cu phap 
+promo_code = f"{name}-{year}-VIP "
+
+#6. In ra ket qua 
+print(f" Ma uu dai cua ban la: {ma_uu_dai}")
