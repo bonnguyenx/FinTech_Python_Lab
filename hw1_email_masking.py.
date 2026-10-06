@@ -1,0 +1,16 @@
+bai1_email_masking
+
+1. Du lieu dau vao 
+email = input(" Nhap dia chi Email: ")
+
+2. Dung split de tach ten voi mien 
+username, domain = email.split("@")
+
+3. Trich xuat 3 ky tu dau 
+first_3_character = username[0:3]
+
+4. Ghep 3 ky tu dau + "***@" + ten mien 
+masked_email = f"{first_3_character}***@{domain}
+
+5. In ket qua ra mang hinh
+print(" Email sau khi bao mat:", masked_email)
